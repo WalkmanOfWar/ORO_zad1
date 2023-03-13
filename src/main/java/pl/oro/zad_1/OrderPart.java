@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode
-public class OrderParts {
+public class OrderPart {
     @Id
     @ManyToOne
     @JoinColumn(name = "order_id", nullable = false)
