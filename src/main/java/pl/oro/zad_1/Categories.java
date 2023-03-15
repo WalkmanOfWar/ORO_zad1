@@ -12,7 +12,7 @@ import lombok.*;
 @EqualsAndHashCode
 public class Categories {
     @Id
-    @SequenceGenerator(name = "categories_id_seq", sequenceName = "categories_id_seq")
+    @SequenceGenerator(name = "categories_id_seq", sequenceName = "categories_id_seq",  allocationSize = 1)
     @GeneratedValue(strategy= GenerationType.SEQUENCE, generator = "categories_id_seq")
     private Long id;
 

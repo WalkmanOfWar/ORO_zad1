@@ -8,6 +8,7 @@ import java.math.BigDecimal;
 
 @Entity
 @Table(name = "order_parts")
+@IdClass(OrderId.class)
 @Getter
 @Setter
 @NoArgsConstructor
